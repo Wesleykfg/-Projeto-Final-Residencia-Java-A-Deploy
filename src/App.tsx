@@ -16,6 +16,7 @@ import { Provider } from "react-redux";
 import store from "./store/Store";
 import { ToastContainer } from 'react-toastify';
 import 'react-toastify/dist/ReactToastify.css';
+import ListarAgencia from './paginas/listarAgencias/ListarAgencia';
 
 
 function App() {
@@ -65,6 +66,9 @@ function App() {
               </Route>
               <Route path='/deletarTema/:id'>
                 <DeletarTema />
+              </Route>
+              <Route path='/agencias'>
+                <ListarAgencia />
               </Route>
             </div>
           </Switch>

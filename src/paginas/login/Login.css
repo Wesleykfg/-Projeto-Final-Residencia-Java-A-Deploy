@@ -1,16 +1,41 @@
-.textos1{
+.textos{
     font-weight: bold !important;
+    color: #013A20 !important;
+}
+
+.textos2{
+    font-weight: bold !important;
+    color: #1E1514 !important;
+    padding-top: 35% !important;
+}
+
+.textfield{
+    
+    background-color: #fff !important;   
+}
+
+.botao1{
+    border-color: #013A20  !important;
+    background-color:#1E1514 !important;
+    color: #ECD5BB !important;
+    margin-top: 30px;
+}
+
+.cor-login{
+    background-color: #ECD5BB;
+    width: 100vh;
+    min-height: 100vh;
+}
+
+.text-decorator-none{
+    text-decoration: none !important;
 }
 
 .imagem{
-    background-image: url(https://i.imgur.com/d5bMdDJ.jpg);
-    background-repeat:no-repeat;
+    background-image: url("https://i.imgur.com/GgZYiow.jpg");
+    background-repeat: no-repeat;
     width: 100vh;
     min-height: 100vh;
     background-size: cover;
     background-position: center;
-}
-
-.text-decorator-none{
-    text-decoration: none;
 }

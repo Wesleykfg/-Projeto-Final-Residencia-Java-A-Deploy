@@ -2,6 +2,7 @@ import React, { useEffect } from "react";
 import { Typography, Box, Grid, Button } from "@material-ui/core"
 import TabPostagem from "../../components/postagens/tabpostagem/TabPostagem";
 import "./Home.css";
+import CarouselComponent from "../../components/carousel/CarouselComponent";
 import ModalPostagem from "../../components/postagens/modalPostagem/ModalPostagem";
 import { useHistory } from "react-router";
 import { useSelector } from "react-redux";
@@ -16,44 +17,70 @@ function Home() {
     );
 
     useEffect(() => {
-        if (token == "") {
-            toast.error("Você precisa estar logado!!!", {
-                position: "top-right",
-                autoClose: 2000,
-                hideProgressBar: false,
-                closeOnClick: true,
-                pauseOnHover: false,
-                draggable: false,
-                theme: "colored",
-                progress: undefined,
-            });
-            history.push("/login")
-
+        if (token == '') {
+            history.push('/home')
         }
-    }, [token])
+
+    }, [token]);
     return (
         <>
-            <Grid container direction="row" justifyContent="center" alignItems="center" className="caixa">
-                <Grid alignItems="center" item xs={6}>
-                    <Box paddingX={20} >
-                        <Typography variant="h3" gutterBottom color="textPrimary" component="h3" align="center" className="titulo">Seja bem vinde!</Typography>
-                        <Typography variant="h5" gutterBottom color="textPrimary" component="h5" align="center" className="titulo">Você está no Accenture Bank, o melhor Banco digital!</Typography>
+        
+            <Grid xs={12} sm={12} container direction="row" justifyContent="center" alignItems="center" className="caixa">
+                
+                    <Box className="carrossel">
+                        <CarouselComponent />
                     </Box>
-                    <Box display="flex" justifyContent="center">
-                        <Box marginRight={1}>
-                            <ModalPostagem />
-                        </Box>
-                        <Link to="/posts" className="text-decorator-none">
-                            <Button variant="outlined" className="botao">Ver Postagens</Button>
-                        </Link>
+
+                
+
+                <Grid xs={5} sm={5} className="img">
+                    <img src="https://i.imgur.com/0oqcguC.png" alt="" className="img" />
+
+                </Grid>
+
+                <Grid xs={2} sm={2} className="aligncenter">
+                    <Typography variant="h3" component="h4" align="center" className="titulo">Destaques da Semana</Typography>
+
+                </Grid>
+
+
+                <Grid xs={5} sm={5} className="img">
+                    <img src="https://i.imgur.com/0oqcguC.png" alt="" className="img" />
+
+                </Grid>
+
+
+                <Box border={1} className="dest">
+                    <Box justifyContent="center" display="flex">
+                        <img src="https://i.imgur.com/UVL90YY.png" alt="" className="card-home" />
                     </Box>
-                </Grid>
-                <Grid item xs={6} >
-                    <img src="https://i.imgur.com/H88yIo2.png" alt="" width="500px" height="500px" />
-                </Grid>
-                <Grid xs={12} className="postagens">
-                    <TabPostagem />
-                </Grid>
+                    
+                    
+                </Box>
+
+                <Box border={1} className="dest">
+                    <Box justifyContent="center" display="flex">
+                        <img src="https://i.imgur.com/vjnHjZJ.png" alt="" className="card-home" />
+                    </Box>
+                    
+                    
+                </Box>
+
+                <Box border={1} className="dest">
+                    <Box justifyContent="center" display="flex">
+                        <img src="https://i.imgur.com/YSNmu2r.png" alt="" className="card-home" />
+                    </Box>
+                    
+                </Box>
+
+                <Box border={1} className="dest">
+                    <Box justifyContent="center" display="flex">
+                        <img src="https://i.imgur.com/iOu178R.png" alt="" className="card-home" />
+                    </Box>
+                    
+                    
+                </Box>
+
             </Grid>
         </>
     );

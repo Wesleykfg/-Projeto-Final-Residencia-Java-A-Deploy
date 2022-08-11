@@ -1,22 +1,69 @@
 .caixa{
-    background-color:#3F51B5;
+    background-color:#f2f2f2 !important;
+    width: 100vh;
+    min-height: 100vh;
 }
-
+.carrossel{
+    width: 100%;
+    padding-bottom: 5%;
+}
 .titulo{
-    color: white !important;
-    font-weight: bold !important;
+    color: black !important;
+    -webkit-text-stroke-color: #1E1514;
+    font-size: 2em !important;
 }
 
 .botao{
-    border-color: white !important;
-    background-color: #3F51B5;
-    color: white !important;
+    border-color: #1E1514 !important;
+    color: #1E1514 !important;
 }
 
 .postagens{
-    background-color: white;
+    background-color: #ECD5BB !important;
 }
 
-.text-decorator-none{
-    text-decoration: none;
+.dest{
+    background-color: #f2f2f2 !important;
+    border-color: #f2f2f2 !important;
+    width: 20%;
+    margin: 1%;
+    margin-bottom: 5% !important;
+    margin-top: 3% !important;
+}
+
+@media only screen and (max-width: 600px) {
+    .dest{
+        width: 100%;
+    }
+}
+
+.card-home{
+    width: 100%;
+}
+
+.pitch-autor{
+    font-size: 12px;
+    font-family: 'Podkova', serif !important;
+    color: #000000 !important;
+    text-align: justify !important;
+}
+
+.img{
+    width: 100%;
+    height: 100px;
+}
+
+#textbox {display:flex; flex-flow:row wrap;}
+
+.alignleft {
+width:500%;
+text-align:left;
+}
+.aligncenter {
+width:33.33333%;
+text-align:center;
+}
+.alignright {
+width:500%;
+text-align:right;
 }

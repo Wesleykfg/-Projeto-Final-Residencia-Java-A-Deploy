@@ -1,0 +1,41 @@
+.caixaProdutos{
+    background-color:#f2f2f2 !important;
+    width: 100vh;
+    min-height: 100vh;
+}
+
+.img{
+    width: 50%;
+    height: 50px;
+}
+
+.card{
+    background-color: #f2f2f2 !important;
+    border-color: #f2f2f2 !important;
+    width: 20%;
+    margin: 1%;
+    padding: 20px;
+}
+
+@media only screen and (max-width: 600px) {
+    .card{
+        width: 100%;
+    }
+}
+
+.card-img{
+    width: 50%;
+}
+
+.pitch-autor{
+    font-size: 12px;
+    font-family: 'Podkova', serif !important;
+    color: #000000 !important;
+    text-align: justify !important;
+}
+
+.aligncenterProdutos {
+    width:33.33333%;
+    text-align:center;
+    color: black !important;
+    }

@@ -1,8 +1,18 @@
+.navbar{
+    background-color: #4B0082 !important;
+}
 .cursor{
     cursor: pointer;
     color: white;
+    background-color: #4B0082 !important;
 }
 
 .text-decorator-none{
     text-decoration: none;
+}
+
+.nav-item {
+    display: flex;
+    align-items: center;
+    height: 80px;
 }

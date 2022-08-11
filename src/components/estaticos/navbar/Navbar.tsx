@@ -1,5 +1,6 @@
+
 import React from 'react';
-import { AppBar, Toolbar, Typography, Box } from '@material-ui/core';
+import { AppBar, Toolbar, Typography, Box, Grid } from '@material-ui/core';
 import { Link } from 'react-router-dom';
 import { useHistory } from 'react-router-dom'
 import './Navbar.css'
@@ -8,6 +9,9 @@ import { TokenState } from '../../../store/tokens/tokensReducer';
 import { useDispatch } from "react-redux";
 import { addToken } from '../../../store/tokens/actions';
 import {toast} from "react-toastify";
+import Button from 'react-bootstrap/Button';
+import Form from 'react-bootstrap/Form';
+import AccountCircleIcon from '@mui/icons-material/AccountCircle';
 
 function Navbar() {
     const token = useSelector<TokenState, TokenState["tokens"]>(
@@ -34,11 +38,11 @@ function Navbar() {
     var navbarComponent;
 
     if (token != "") {
-        navbarComponent = <AppBar position="static">
+        navbarComponent = <AppBar position="static" className="navbar">
             <Toolbar variant="dense">
                 <Box className='cursor'>
                     <Typography variant="h5" color="inherit">
-                        BlogPessoal
+                        AccentureBank
                     </Typography>
                 </Box>
 
@@ -72,6 +76,35 @@ function Navbar() {
                         </Box>
                     </Link>
 
+                    <Link to="/agencias" className="text-decorator-none">
+                        <Box mx={1} className='cursor'>
+                            <Typography variant="h6" color="inherit">
+                                agencias
+                            </Typography>
+                        </Box>
+                    </Link>
+                    <Box mx={1} className='navbar'>
+
+                    </Box>
+
+                    <Form className="d-flex">
+            <Form.Control
+              type="Pesquisar"
+              placeholder="Pesquisar"
+              className="me-2"
+              aria-label="Pesquisar"
+            />
+            <Grid xs={12} >
+                <Box>
+                <Button variant="outline-success" className='cursor'>Search</Button>
+                </Box>
+            </Grid>
+          </Form>
+
+          <Box className="accicon">
+                                <AccountCircleIcon  onClick={() => goLogout()} />
+
+                            </Box>
                     <Box mx={1} className='cursor' onClick={goLogout}>
                         <Typography variant="h6" color="inherit">
                             logout
@@ -85,7 +118,9 @@ function Navbar() {
     }
     return (
         <>
+        <AppBar position="static" className="navbar">
             {navbarComponent}
+        </AppBar>
         </>
     )
 }
