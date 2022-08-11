@@ -1,41 +1,108 @@
 .caixaProdutos{
-    background-color:#f2f2f2 !important;
+    background-color:#4B0082 !important;
     width: 100vh;
     min-height: 100vh;
 }
 
 .img{
-    width: 50%;
-    height: 50px;
+    width: 100%;
+    height: 100px;
 }
 
 .card{
-    background-color: #f2f2f2 !important;
-    border-color: #f2f2f2 !important;
+    background-color: #4B0082 !important;
+    border-color: #4B0082 !important;
     width: 20%;
     margin: 1%;
     padding: 20px;
 }
 
-@media only screen and (max-width: 600px) {
-    .card{
-        width: 100%;
-    }
-}
+
 
 .card-img{
-    width: 50%;
+    width: 100%;
 }
 
 .pitch-autor{
     font-size: 12px;
     font-family: 'Podkova', serif !important;
     color: #000000 !important;
+    background-color: #4B0082 !important;
     text-align: justify !important;
+    width: 200px;
+        overflow-wrap: break-word;
+        word-wrap: break-word;
+        word-break: break-word;
 }
 
 .aligncenterProdutos {
     width:33.33333%;
     text-align:center;
     color: black !important;
+    }
+
+    .dest{
+        background-color: #4B0082 !important;
+        border-color: #4B0082 !important;
+        width: 20%;
+        margin: 1%;
+        margin-bottom: 5% !important;
+        margin-top: 3% !important;
+    }
+
+    .word {
+        width: 200px;
+        overflow-wrap: break-word;
+        word-wrap: break-word;
+        word-break: break-word;
+    }
+
+    .card-home{
+        width: 100%;
+        border-color: #4B0082;
+        background-color: #4B0082 !important;
+    }
+    
+    .pitch-autor{
+        font-size: 12px;
+        font-family: 'Podkova', serif !important;
+        color: #000000 !important;
+        text-align: justify !important;
+    }
+    
+    .img{
+        width: 100%;
+        height: 100px;
+        border-color: #4B0082 !important;
+    }
+    
+    #textbox {display:flex; flex-flow:row wrap;}
+    
+    .alignleft {
+    width:500%;
+    text-align:left;
+    }
+    .aligncenter {
+    width:33.33333%;
+    text-align:center;
+    }
+    .alignright {
+    width:500%;
+    text-align:right;
+    }
+
+    .caixa{
+        background-color:#f2f2f2 !important;
+        width: 100vh;
+        min-height: 100vh;
+    }
+
+    .imagem3{
+        transition: all 0.5s;
+        cursor: pointer;
+    }
+    
+    .imagem3:hover{
+        -webkit-transform: scale(1.5);
+        transform: scale(1.5);
     }

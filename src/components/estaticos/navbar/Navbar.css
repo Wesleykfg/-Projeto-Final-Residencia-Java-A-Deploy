@@ -16,3 +16,14 @@
     align-items: center;
     height: 80px;
 }
+
+.button {
+    color: white;
+    background: purple;
+    transition: background 1s;
+  }
+  
+  button:hover,
+  button:focus {
+    background: purple;
+  }

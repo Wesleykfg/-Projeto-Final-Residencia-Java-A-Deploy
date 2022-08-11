@@ -5,7 +5,7 @@ import Carousel from 'react-bootstrap/Carousel'
 function CarouselComponent() {
     const [itens, setItens] = useState([
         {
-            img: "https://i.imgur.com/VCyPOfL.png",
+            img: "https://i.imgur.com/GDY1MA1.png",
             titulo: "",
         },
         {

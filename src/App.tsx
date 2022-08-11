@@ -17,6 +17,7 @@ import store from "./store/Store";
 import { ToastContainer } from 'react-toastify';
 import 'react-toastify/dist/ReactToastify.css';
 import ListarAgencia from './paginas/listarAgencias/ListarAgencia';
+import Sobre from './paginas/sobre/Sobre';
 
 
 function App() {
@@ -69,6 +70,9 @@ function App() {
               </Route>
               <Route path='/agencias'>
                 <ListarAgencia />
+              </Route>
+              <Route path='/sobre'>
+                <Sobre />
               </Route>
             </div>
           </Switch>

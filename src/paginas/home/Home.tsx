@@ -51,34 +51,55 @@ function Home() {
 
 
                 <Box border={1} className="dest">
-                    <Box justifyContent="center" display="flex">
-                        <img src="https://i.imgur.com/UVL90YY.png" alt="" className="card-home" />
+                    <Box justifyContent="center" display="flex" className="imagem3">
+                        <img src="https://i.imgur.com/LUq0C7d.png" alt="" className="card-home" />
+                        
                     </Box>
-                    
+                    <Typography variant="h6" component="h5" align="center" gutterBottom className="nome-autor">
+                        Financiamento
+                    </Typography>
+                    <Typography variant="body2" component="p" align="center" className="pitch-autor">
+                        Veja as melhores taxas...
+                    </Typography>
                     
                 </Box>
 
                 <Box border={1} className="dest">
-                    <Box justifyContent="center" display="flex">
-                        <img src="https://i.imgur.com/vjnHjZJ.png" alt="" className="card-home" />
+                    <Box justifyContent="center" display="flex" className="imagem3">
+                        <img src="https://i.imgur.com/BmkvEjN.png" alt="" className="card-home" />
                     </Box>
-                    
+                    <Typography variant="h6" component="h5" align="center" gutterBottom className="nome-autor">
+                        Programação
+                    </Typography>
+                    <Typography variant="body2" component="p" align="center" className="pitch-autor">
+                        Empresas no mundo da tecnologia...
+                    </Typography>
                     
                 </Box>
 
                 <Box border={1} className="dest">
-                    <Box justifyContent="center" display="flex">
-                        <img src="https://i.imgur.com/YSNmu2r.png" alt="" className="card-home" />
+                    <Box justifyContent="center" display="flex" className="imagem3">
+                        <img src="https://i.imgur.com/SceenkL.jpg" alt="" className="card-home" />
                     </Box>
-                    
+                    <Typography variant="h6" component="h5" align="center" gutterBottom className="nome-autor">
+                        Accenture
+                    </Typography>
+                    <Typography variant="body2" component="p" align="center" className="pitch-autor">
+                        Veja o depoimento de nossos clientes...
+                    </Typography>
                 </Box>
 
                 <Box border={1} className="dest">
-                    <Box justifyContent="center" display="flex">
-                        <img src="https://i.imgur.com/iOu178R.png" alt="" className="card-home" />
+                    <Box justifyContent="center" display="flex" className="imagem3">
+                        <img src="https://i.imgur.com/0N9Dnks.jpg" alt="" className="card-home" />
                     </Box>
                     
-                    
+                    <Typography variant="h6" component="h5" align="center" gutterBottom className="nome-autor">
+                        Benefícios
+                    </Typography>
+                    <Typography variant="body2" component="p" align="center" className="pitch-autor">
+                        Veja benefícios da conta AccentureBank..
+                    </Typography>
                 </Box>
 
             </Grid>

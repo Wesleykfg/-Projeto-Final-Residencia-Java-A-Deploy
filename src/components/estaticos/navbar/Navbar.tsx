@@ -40,9 +40,9 @@ function Navbar() {
     if (token != "") {
         navbarComponent = <AppBar position="static" className="navbar">
             <Toolbar variant="dense">
+            <img src= "https://i.imgur.com/g0eqKeE.png" className='logo' />
                 <Box className='cursor'>
                     <Typography variant="h5" color="inherit">
-                        AccentureBank
                     </Typography>
                 </Box>
 
@@ -68,10 +68,10 @@ function Navbar() {
                             </Typography>
                         </Box>
                     </Link>
-                    <Link to="/formularioTema" className="text-decorator-none">
+                    <Link to="/sobre" className="text-decorator-none">
                         <Box mx={1} className='cursor'>
                             <Typography variant="h6" color="inherit">
-                                cadastrar tema
+                                sobre
                             </Typography>
                         </Box>
                     </Link>
@@ -96,7 +96,7 @@ function Navbar() {
             />
             <Grid xs={12} >
                 <Box>
-                <Button variant="outline-success" className='cursor'>Search</Button>
+                <Button variant="outline-success" className='button'>Search</Button>
                 </Box>
             </Grid>
           </Form>
